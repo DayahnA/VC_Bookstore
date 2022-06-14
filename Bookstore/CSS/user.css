@@ -67,3 +67,17 @@ label{
     clear: both;
     display: table;
   }
+  table{
+    border-collapse: collapse;
+    
+}
+table td {
+    border: 1px solid #e3e3e3;
+    padding: 4px 8px;
+    background-color: #FFF;
+}
+table th {
+    border: 1px solid #e3e3e3;
+    padding: 4px 8px;
+    background-color: #FFF;
+}
