@@ -71,7 +71,11 @@
           //https://www.geeksforgeeks.org/how-to-encrypt-and-decrypt-a-php-string/#:~:text=In%20PHP%2C%20Encryption%20and%20Decryption,used%20to%20encrypt%20the%20data.&text=Parameters%3A,which%20need%20to%20be%20encrypted. - ref
 
           if($password == $decryptedPass){
-            $_SESSION['err_msg'] = "user exists";
+            $currentUser = $id;
+            $_SESSION['message'] = "Welcome";
+            $_SESSION['msg_type'] = "success";
+            header('Location: user_home.php');
+            exit;
           }
           else {
             $_SESSION['err_msg'] = "Incorrect Credentials! Try again!";

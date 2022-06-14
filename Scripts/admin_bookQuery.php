@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             .container {
-                display: grid; 
                 grid-template-columns: 0.2fr 2.6fr 0.2fr; 
                 grid-template-rows: 0.3fr 0.4fr 0.4fr 4.6fr 0.4fr; 
                 gap: 0px 0px; 
@@ -27,7 +26,6 @@
             <div class="Heading">
                 <p>Bookstore</p>
             </div>
-            <div class="Footer"></div>
             <div class="Top-Nav">
                 <div class="topnav">
                     <a href="admin_userValidation.php"><b>User Validation</b></a>
@@ -41,7 +39,7 @@
             </div>
             <div class="Body"></div>
             <div class="Form">
-            <button type="submit" name="submit" class="btn btn-primary"><a href="user.php" class="text-light">Add new book</a></button>
+            <button type="submit" name="submit" class="btn btn-success"><a href="update_form.php" class="text-light">Add new book</a></button>
                 <?php
                     session_start();
                     if(isset($_SESSION['message'])){
@@ -50,7 +48,7 @@
                         unset($_SESSION['msg_type']);
                     }
                 ?>  
-
+                <br>
                 <table class="table">
                 <thead>
                     <tr>
@@ -84,7 +82,7 @@
                         $publisher = $row['publisher'];
                         $edition = $row['edition'];
                         $price = $row['bookPrice'];
-                        $condition = $row['condition'];
+                        $condition = $row['bookCondition'];
                         $seller = $row['studentID'];
 
                     echo '<tbody>
@@ -98,7 +96,7 @@
                             <td> R '.$price.'</td>
                             <td>'.$condition.'</td>
                             <td>'.$seller.'</td>
-                            <td><button type="submit" name="submit" class="btn btn-primary"><a href="updateBook.php?updateId='.$id.'" class="text-light">Update</a></button>&nbsp;&nbsp;
+                            <td><button type="submit" name="submit" class="btn btn-primary"><a href="update_form.php?updateId='.$id.'" class="text-light">Update</a></button>&nbsp;&nbsp;
                             <button type="submit" name="submit" class="btn btn-danger"><a href="deleteBook.php?deleteId='.$id.'" class="text-light">Delete</a></button></td>
                         </tr>
                     </tbody>';

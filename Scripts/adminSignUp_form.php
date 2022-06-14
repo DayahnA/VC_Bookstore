@@ -25,7 +25,6 @@
                 <p>Bookstore</p>
             </div>
             <div class="Body"></div>
-            <div class="Footer"></div>
             <div class="Top">
                 <p>Admin - Sign up Page</p>
                 <label id="msg" style="color: green"><b><?php print ( isset($_SESSION['msg']) ? $_SESSION['msg'] : '' ); ?></b></label>
@@ -47,9 +46,6 @@
                     <br><br>     
                     <label><b>Confirm Password:</b></label>    
                     <input type="Password" name="confirmPass" id="confirmPass" value="<?=$confirmPass?>" placeholder="Re-enter Password"><span style="color:red; font-family: Arial, Helvetica, sans-serif;"><?=$confirmPass_error?></span>        
-                    <br><br> 
-                    <label><b>Phone number:</b></label>   
-                    <input type="text" name="phoneNum" id="phoneNum" value="<?=$phoneNum?>" placeholder="Enter Phone number"><span style="color:red; font-family: Arial, Helvetica, sans-serif;"><?=$phoneNum_error?></span>   
                     <br><br> 
                     <input type="button" name="back" id="back" value="Back" onclick="window.location.href='adminLogin_form.php'">
                     <button type="submit" name="save" id="save">Save</button>             

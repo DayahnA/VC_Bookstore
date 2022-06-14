@@ -8,6 +8,7 @@
   if(!$conn){
      die('Could not Connect My Sql:' .mysql_error());
   }
+  $currentUser = "";
 
   //https://www.studentstutorial.com/php/php-mysql-data-insert.php - ref
 ?>

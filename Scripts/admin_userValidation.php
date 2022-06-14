@@ -27,7 +27,6 @@
             <div class="Heading">
                 <p>Bookstore</p>
             </div>
-            <div class="Footer"></div>
             <div class="Top-Nav">
                 <div class="topnav">
                     <a class="active" href="admin_userValidation.php"><b>User Validation</b></a>
@@ -42,6 +41,7 @@
             </div>
             <div class="Body"></div>
             <div class="Form">
+            <button type="submit" name="submit" class="btn btn-primary"><a href="studentSignUp_form.php" class="text-light">Create new user</a></button>
                 <?php
                     session_start();
                     if(isset($_SESSION['message'])){
@@ -95,6 +95,10 @@
                     //https://www.w3schools.com/bootstrap/bootstrap_tables.asp - ref
                 ?>
                 </table>
+            </div>
+            <div class="Footer">
+                <hr>
+                <p>©Copyright. All rights reserved. VC Bookstore 2022.</p>
             </div>
         </div>
     </body>

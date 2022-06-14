@@ -25,7 +25,6 @@
                 <p>Bookstore</p>
             </div>
             <div class="Body"></div>
-            <div class="Footer"></div>
             <div class="Top">
                 <p>Login Page - Admin</p>
                 <label id="msg" style="color: red"><b><?php print ( isset($_SESSION['err_msg']) ? $_SESSION['err_msg'] : '' ); ?></b></label>

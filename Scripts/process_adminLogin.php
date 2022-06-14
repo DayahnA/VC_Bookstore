@@ -29,7 +29,7 @@
 
     if($errorCount == 0){
     //comparing variables to data in the user table
-    $query = "SELECT password FROM tblUser WHERE email = '$email'";
+    $query = "SELECT password FROM tblAdmin WHERE email = '$email'";
 
     $sql = mysqli_query($conn, $query);
 

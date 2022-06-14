@@ -84,25 +84,13 @@
         $errorCount++;
     }
 
-     //validating and assigning phone number
-    if(empty($_POST['phoneNum'])){
-      $phoneNum_error = "*Required";
-      $errorCount++;
-    } else if(strlen($_POST['phoneNum']) !== 10 ){
-      $phoneNum_error = "Invalid number";
-      $errorCount++;
-    } else{
-      $phoneNum = $_POST['phoneNum'];
-    }
-
     if($errorCount == 0){
     //Inserting the data into the user table
-    $sql = "INSERT INTO tblUser (studentID, stuName, email, password, phoneNum)
-            VALUES ('$id', '$name', '$email', '$encryptedPass', '$phoneNum')";
+    $sql = "INSERT INTO tblAdmin (adminID, name, email, password)
+            VALUES ('$id', '$name', '$email', '$encryptedPass')";
     
     if (mysqli_query($conn, $sql)) {
         $_SESSION['msg'] = "Details saved successfully.";
-       // header("Location:studentSignUp_form.php");
     } else {
         $_SESSION['err_msg'] = "Error: " . mysqli_error($conn);
     }

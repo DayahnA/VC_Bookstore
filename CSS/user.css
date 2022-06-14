@@ -49,6 +49,15 @@ label{
     text-align: center;
 }
 
+.Form1{  
+    width: 550px;  
+    overflow: hidden;  
+    margin: auto;  
+    margin: 20 0 0 450px;  
+    padding: 80px;  
+    background: #c9c9c9;  
+    border-radius: 15px ;      
+}
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
     float: left;
@@ -62,3 +71,130 @@ label{
     clear: both;
     display: table;
   }
+
+#title{ 
+    margin-left: 75px;
+    margin-top: 20px; 
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}
+#author{ 
+    margin-left: 100px;
+    margin-top: 20px; 
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}
+#publisher{ 
+    margin-left: 75px;
+    margin-top: 20px; 
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}
+#ISBN{ 
+    margin-left: 45px;
+    margin-top: 20px; 
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}
+#price{ 
+    margin-left: 80px;
+    margin-top: 20px; 
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}
+#edition{ 
+    margin-left: 95px;
+    margin-top: 20px; 
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}
+#condition{ 
+    margin-left: 75px;
+    margin-top: 20px; 
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}
+#back{  
+    margin-left: 150px;
+    background-color: #1781C1;
+    width: 100px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;
+    margin-top: 30px;  
+    color: rgb(255, 255, 255);  
+}  
+#save{ 
+    margin-left: 70px; 
+    background-color:#1781C1;
+    width: 100px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    margin-top: 30px;  
+    color: rgb(255, 255, 255);
+} 
+
+table, td, th {
+    border: 1px solid;
+  }
+  
+table {
+    width: 70%;
+    border-collapse: collapse;
+}
+#shop{ 
+    margin-left: 20px; 
+    background-color:#1781C1;
+    width:200px;  
+    height: 35px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    margin-top: 30px;  
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+} 
+#checkout{ 
+    margin-left: 70px; 
+    background-color:#1781C1;
+    margin-right: 30px;
+    float: right;
+    width: 150px;  
+    height: 35px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    margin-top: 30px;  
+    color: rgb(255, 255, 255);
+} 
+.Footer{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: #c9c9c9;
+    opacity: 50%;
+}

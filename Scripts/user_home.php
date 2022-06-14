@@ -23,15 +23,14 @@
         <div class="container">
             <div class="Heading">
                 <b>Bookstore</b>
-                <img src="\VC_Bookstore\Images\shopping_cart.png" alt="Shopping Cart" width="60" height="40" style="float: right; margin-right: 30px;">
+                <a href="shoppingCart.php"><img src="\VC_Bookstore\Images\shopping_cart.png" alt="Shopping Cart" width="60" height="40" style="float: right; margin-right: 30px;"></a>
                 <b style="font-size: 20px; float: right; margin-right: 60px;">Customer Helpline: 012 345 6789</b>
             </div>
-            <div class="Footer"></div>
             <div class="Top-Nav">
                 <div class="topnav">
                     <a class="active" href="user_home.php"><b>Home</b></a>
-                    <a>Add Listing</a>
-                    <a >Shopping Cart</a>
+                    <a href="user_addListing.php">Add Listing</a>
+                    <a href="shoppingCart.php">Shopping Cart</a>
                     <a href="studentLogin_form.php">Logout</a>
             </div>
             <div class="Top"><br>
@@ -76,6 +75,10 @@
                         <p><b>R 400</b></p>
                     </div>
                 </div>
+            </div>
+            <div class="Footer">
+                <hr>
+                <p>©Copyright. All rights reserved. VC Bookstore 2022.</p>
             </div>
         </div>
     </body>

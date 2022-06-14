@@ -25,9 +25,8 @@
                 <p>Bookstore</p>
             </div>
             <div class="Body"></div>
-            <div class="Footer"></div>
             <div class="Top">
-                <p>Sign up Page</p>
+                <p>Sign up page - Student</p>
                 <label id="msg" style="color: green"><b><?php print ( isset($_SESSION['msg']) ? $_SESSION['msg'] : '' ); ?></b></label>
                 <label id="msg" style="color: red"><b><?php print ( isset($_SESSION['err_msg']) ? $_SESSION['err_msg'] : '' ); ?></b></label>
             </div>
